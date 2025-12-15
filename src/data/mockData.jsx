@@ -3,6 +3,10 @@ import rjImg from '../assets/img/rj-img.jpg';
 import jericoacoaraImg from '../assets/img/jericoacoara.jpg';
 import ouroPretoImg from '../assets/img/ouro-preto-mg.jpg';
 import montanhaImg from '../assets/img/montanha.jpg';
+import greciaImg from '../assets/img/grecia.jpg';
+import pracadaSeImg from '../assets/img/pracadase.jpg';
+import riodeJaneiroImg from '../assets/img/riodeJaneiro.jpg';
+import spImg from '../assets/img/sp.jpg';
 
 
 export const mockListings = [
@@ -53,24 +57,37 @@ export const mockListings = [
     amenities: ["Wi-Fi", "Garagem", "café da manhã"],
     description: "Casa aconchegante no Centro Histórico",
     reviews: []
+  },
+  {
+    id: 5,
+    name: "Farol Santander",
+    location: "São Paulo",
+    price: 350,
+    rating: 5,
+    reviewsCount: 85,
+    images: [spImg],
+    amenities: ["Wi-Fi", "Garagem", "Jantar","café da manhã" ],
+    description: "Quarto de luxo no Centro Histórico de São Paulo",
+    reviews: []
   }
 ];
 
 export const featuredLocations = [
+  
   {
     id: 1,
     name: "Rio de Janeiro",
-    image: rjImg
+    image: riodeJaneiroImg
   },
   {
     id: 2,
-    name: "Gramado",
-    image: gramadoImg
+    name: "Praça da Sé",
+    image: pracadaSeImg
   },
   {
     id: 3,
-    name: "Jericoacoara",
-    image: jericoacoaraImg
+    name: "Grecia",
+    image: greciaImg
   },
    {
     id: 4,
