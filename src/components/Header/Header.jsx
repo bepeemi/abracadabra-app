@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className={styles.header} role="banner">
       <div className={styles.logo}>
-        <h1>Locação de Quartos</h1> {/* SEO: Heading principal */}
+        <h1>Abracadabra.com</h1> 
       </div>
       <button
         className={styles.hamburger}
@@ -17,7 +17,7 @@ const Header = () => {
         aria-expanded={menuOpen}
         aria-label="Abrir menu de navegação"
       >
-        ☰
+        
       </button>
       <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`} role="navigation">
         <ul>

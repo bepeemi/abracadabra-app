@@ -3,11 +3,12 @@ import Carousel from '../../components/Carousel/Carousel';
 import RatingStars from '../../components/RatingStars/RatingStars';
 import Review from '../../components/Review/Review';
 import Button from '../../components/Button/Button';
-import { mockListings } from '../../data/mockData'; // Simula dados; em produção, passe via props ou API
+import { mockListings } from '../../data/mockData.jsx';
 import styles from './Details.module.css';
 
+
 const Details = ({ listingId }) => {
-  // Simulação: Busca o listing pelo ID (em produção, use API ou contexto)
+
   const listing = mockListings.find(item => item.id === listingId) || mockListings[0];
 
   const handleReserve = () => {

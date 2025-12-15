@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: var(--background-color);
+  background: orangered;
   padding: 16px;
   display: flex;
   justify-content: space-between;
@@ -11,25 +11,32 @@
   z-index: 1000;
 }
 
+/* Logo/Titulo da pagina */
 .logo h1 {
   font-size: 1.5rem;
+  color: greenyellow;
 }
 
+/* Botão hamburguer no mobile */
 .hamburger {
   display: block;
-  background: none;
+  background: black;
+  color: white;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
 }
 
+/* Navegação */
 .nav {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  background: var(--background-color);
+  background: black;
   flex-direction: column;
 }
 
@@ -43,25 +50,45 @@
 }
 
 .nav li {
-  margin: 8px 0;
+  margin: 12px 0;
 }
 
-/* Tablet: Menu horizontal */
+/* Links */
+.nav a {
+  color: white;           
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.nav a:hover {
+  opacity: 0.7;
+}
+/* TABLET / DESKTOP (por serem horizontais)*/
+
 @media (min-width: 768px) {
   .hamburger {
     display: none;
   }
+
   .nav {
     display: flex;
     position: static;
     width: auto;
     background: none;
   }
+
   .nav ul {
     display: flex;
     padding: 0;
   }
+
   .nav li {
     margin: 0 16px;
+  }
+
+  .nav a {
+    color: black;        
+    font-size: 1rem;
   }
 }

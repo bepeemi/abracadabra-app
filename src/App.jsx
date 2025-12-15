@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Home from './pages/Home/Home';
 import Details from './pages/Details/Details';
-import './styles/global.css'; // Importa estilos globais
+import './style/global.css'; 
 
 const App = () => {
-  // Estado simples para navegação (em produção, use React Router)
+  // Estado simples para navegação 
   const [currentPage, setCurrentPage] = useState('home');
   const [selectedListingId, setSelectedListingId] = useState(null);
 
