@@ -1,0 +1,8 @@
+.review {
+  border-bottom: 1px solid #eee;
+  padding: 16px 0;
+}
+
+.review h4 {
+  font-weight: bold;
+}

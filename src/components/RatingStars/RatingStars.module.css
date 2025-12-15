@@ -1,0 +1,12 @@
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  color: gold;
+}
+
+.starEmpty {
+  color: #ddd;
+}

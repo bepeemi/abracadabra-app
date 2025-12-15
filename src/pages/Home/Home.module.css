@@ -1,0 +1,38 @@
+/* Estilos para a página Home: Mobile-first, com ajustes para tablet e desktop */
+.home {
+  padding-top: 80px; /* Espaço para header fixo */
+}
+
+.hero {
+  margin-bottom: 32px;
+}
+
+.listings {
+  margin-bottom: 32px;
+}
+
+.listings h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile: 1 coluna */
+  gap: 16px;
+}
+
+/* Tablet: 2 colunas */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop: 3 colunas */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

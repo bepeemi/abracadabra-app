@@ -1,0 +1,51 @@
+/* Reset básico e variáveis CSS para consistência */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #f8f9fa;
+  --text-color: #333;
+  --background-color: #fff;
+  --border-radius: 8px;
+  --font-family: 'Arial', sans-serif;
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+/* Mobile first: Base para mobile */
+.container {
+  max-width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 24px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 32px;
+  }
+}
+
+/* Acessibilidade: Foco visível */
+*:focus {
+  outline: 2px solid var(--primary-color);
+}

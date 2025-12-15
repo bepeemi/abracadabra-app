@@ -1,0 +1,37 @@
+.searchBar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background: var(--secondary-color);
+  border-radius: var(--border-radius);
+}
+
+.searchBar input,
+.searchBar button {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+.searchBar button {
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.searchBar button:hover {
+  opacity: 0.9;
+}
+
+/* Tablet: Flex horizontal */
+@media (min-width: 768px) {
+  .searchBar {
+    flex-direction: row;
+  }
+  .searchBar input,
+  .searchBar button {
+    flex: 1;
+  }
+}

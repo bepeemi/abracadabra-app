@@ -1,0 +1,81 @@
+/* Estilos para a página Details: Mobile-first */
+.details {
+  padding: 16px;
+}
+
+.carouselSection {
+  margin-bottom: 24px;
+}
+
+.info h1 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.location, .price {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.description {
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.amenities {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+
+.reviews {
+  margin-bottom: 24px;
+}
+
+.average {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 32px;
+}
+
+/* Tablet: Ajustes de espaçamento */
+@media (min-width: 768px) {
+  .details {
+    padding: 24px;
+  }
+  .info h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Desktop: Layout em grid para info e reviews lado a lado */
+@media (min-width: 1024px) {
+  .details {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+  }
+  .carouselSection {
+    grid-column: 1 / -1;
+  }
+  .reviews {
+    grid-column: 2;
+  }
+  .cta {
+    grid-column: 1 / -1;
+  }
+}
