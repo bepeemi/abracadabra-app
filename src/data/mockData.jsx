@@ -37,7 +37,7 @@ export const mockListings = [
   },
   {
     id: 3,
-    name: "Praia de Jericoacoara",
+    name: "Pousada em Jericoacoara",
     location: "Ceará",
     price: 450,
     rating: 5,
