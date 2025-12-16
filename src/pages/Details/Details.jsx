@@ -1,4 +1,3 @@
-import React from 'react';
 import Carousel from '../../components/Carousel/Carousel';
 import RatingStars from '../../components/RatingStars/RatingStars';
 import Review from '../../components/Review/Review';
