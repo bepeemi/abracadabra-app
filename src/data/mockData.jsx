@@ -4,9 +4,10 @@ import jericoacoaraImg from '../assets/img/jericoacoara.jpg';
 import ouroPretoImg from '../assets/img/ouro-preto-mg.jpg';
 import montanhaImg from '../assets/img/montanha.jpg';
 import greciaImg from '../assets/img/grecia.jpg';
-import pracadaSeImg from '../assets/img/pracadase.jpg';
-import riodeJaneiroImg from '../assets/img/riodeJaneiro.jpg';
+import pracaDaSeImg from '../assets/img/pracaDase.jpg';
+import rioDeJaneiroImg from '../assets/img/rioDeJaneiro.jpg';
 import spImg from '../assets/img/sp.jpg';
+import fernandoDeNoronhaImg from '../assets/img/fernandoDeNoronha.jpg';
 
 
 export const mockListings = [
@@ -69,6 +70,18 @@ export const mockListings = [
     amenities: ["Wi-Fi", "Garagem", "Jantar","café da manhã" ],
     description: "Quarto de luxo no Centro Histórico de São Paulo",
     reviews: []
+  },
+  {
+    id: 6,
+    name: "Colina Pousada Spa",
+    location: "Fernando de Noronha",
+    price: 550,
+    rating: 5,
+    reviewsCount: 105,
+    images: [fernandoDeNoronhaImg],
+    amenities: ["Wi-Fi", "Garagem", "Jantar","café da manhã", "Passeios" ],
+    description: "Luxuosa pousada com Spa",
+    reviews: []
   }
 ];
 
@@ -77,12 +90,12 @@ export const featuredLocations = [
   {
     id: 1,
     name: "Rio de Janeiro",
-    image: riodeJaneiroImg
+    image: rioDeJaneiroImg
   },
   {
     id: 2,
     name: "Praça da Sé",
-    image: pracadaSeImg
+    image: pracaDaSeImg
   },
   {
     id: 3,
