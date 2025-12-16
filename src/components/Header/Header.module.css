@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: orangered;
+  background: rgb(24, 135, 255);
   padding: 16px;
   display: flex;
   justify-content: space-between;
@@ -14,7 +14,12 @@
 /* Logo/Titulo da pagina */
 .logo h1 {
   font-size: 1.5rem;
-  color: greenyellow;
+  color: rgb(255, 69, 0);
+  text-shadow:
+    -1px -1px 0 #fff,
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
 }
 
 /* Botão hamburguer no mobile */
